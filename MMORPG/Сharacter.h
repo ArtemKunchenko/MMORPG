@@ -4,10 +4,10 @@
 using namespace std;
 
 
-class Ñharacter
+class Character
 {
 public:
-	Ñharacter(string name);
+	Character(string name);
 	void printStatusbar(int amount);
 	void printCharacter();
 	

@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	Ñharacter per("Alex");
+	Character per("Alex");
 	per.printCharacter();
 
 	system("pause");

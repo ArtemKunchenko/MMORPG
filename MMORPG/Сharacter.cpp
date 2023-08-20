@@ -27,18 +27,18 @@ void SetColor(ConsoleColor text, ConsoleColor background)
 }
 #pragma endregion
 
-Ñharacter::Ñharacter(string name)
+Character::Character(string name)
 {
 	_name = name;
 	_type = "";
 	_profession = "";
 	_weapon = "";
-	_hp = 20;
-	_mp = 15;
-	_cp = 5;
+	_hp = 0;
+	_mp = 0;
+	_cp = 0;
 }
 
-void Ñharacter::printStatusbar(int amount)
+void Character::printStatusbar(int amount)
 {
 	if (amount > 15 && amount <= 20) SetColor(Green, Black);
 	else if (amount > 10 && amount <= 15) SetColor(Blue, Black);
@@ -49,7 +49,7 @@ void Ñharacter::printStatusbar(int amount)
 	cout << "\n\n";
 }
 
-void Ñharacter::printCharacter()
+void Character::printCharacter()
 {
 	cout << "NAME: " << _name << "\n\n";
 	cout << "TYPE: " << _type << "\n\n";
