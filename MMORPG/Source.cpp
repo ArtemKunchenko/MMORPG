@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-	Character per("Alex");
-	per.printCharacter();
+	Cleric ex("Alex");
+	ex.printCharacter();
 
 	system("pause");
 	return 0;

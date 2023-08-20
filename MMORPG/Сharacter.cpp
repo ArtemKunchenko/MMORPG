@@ -33,9 +33,9 @@ Character::Character(string name)
 	_type = "";
 	_profession = "";
 	_weapon = "";
-	_hp = 0;
-	_mp = 0;
-	_cp = 0;
+	_hp = 20;
+	_mp = 5;
+	_cp = 15;
 }
 
 void Character::printStatusbar(int amount)
@@ -53,7 +53,7 @@ void Character::printCharacter()
 {
 	cout << "NAME: " << _name << "\n\n";
 	cout << "TYPE: " << _type << "\n\n";
-	cout << "PRIFESSION: " << _profession << "\n\n";
+	cout << "PROFESSION: " << _profession << "\n\n";
 	cout << "WEAPON: " << _weapon << "\n\n";
 	cout << "HP: ";
 	printStatusbar(_hp);
@@ -63,3 +63,16 @@ void Character::printCharacter()
 	printStatusbar(_cp);
 
 }
+
+void Character::setType(string type) { _type = type; }
+
+void Character::setProfession(string profession) { _profession = profession; }
+
+void Character::setWeapon(string weapon) { _weapon = weapon; }
+
+void Character::setHP(int hp) { _hp = hp; }
+
+void Character::setMP(int mp) { _mp = mp; }
+
+void Character::setCP(int cp) { _cp = cp; }
+
