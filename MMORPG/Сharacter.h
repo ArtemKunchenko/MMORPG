@@ -132,9 +132,9 @@ public:
 	Mage(string name) :Character(name)
 	{
 		setType("Mage");
-		setHP(10);
+		setHP(15);
 		setMP(20);
-		setCP(10);
+		setCP(5);
 	}
 };
 
